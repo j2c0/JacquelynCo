@@ -1,0 +1,112 @@
+/**
+* NAME: Jacquelyn Co
+*
+* HEADER: This is the CSS file of Jacquelyn Co's Personal Portfolio Website.
+* It contains the styling elements that maker her website more presentable
+* and appealing.
+*
+* DATE: 7/20/2020
+*
+**/
+
+#navLinks {
+  height: 25px;
+  background-color: black;
+}
+
+/*styling the h1*/
+h1 {
+    color: white;
+    font-family: Verdana;
+    font-size: 80px;
+    margin: 0 0 10px 0;
+}
+
+/*styling the h2*/
+.frontText{
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+/*styling the home page background image*/
+#front {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./backgroundImage.jpeg");
+  opacity: 0.8;
+  background-size: cover;
+  position: relative;
+}
+
+/*here we are styling the info on the front page to be aligned at the center 
+so it can be easily seen and more presentable */
+#front .frontContainer {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+/*here we are styling the navigation links to be certain colors and fonts. we are 
+also spacing out the links on the front page*/
+.homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
+    color: white;
+    background-color: black;
+    font-size: 14.6px;
+    font-family: Verdana;
+    font-weight: bold;
+    padding: 0 85px;
+}
+
+.aboutMe, .projects, .contactMe {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 50px;
+}
+
+#profilePic {
+  height: 350px;
+  display: block;
+  margin-left: 80px;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.basicInfo {
+  display: block;
+  position: relative;
+  top: -300px;
+  margin-left: 500px;
+  margin-right: auto;
+  font-family: Verdana;
+  font-size: 15px;
+  font-weight: normal;
+  
+}
+
+#contactForms {
+  text-align: center;
+}
+
+.formAnswer {
+  font-family: Verdana;
+}
+
+#formMessage {
+  height: 200px;
+  width: 200px;
+}
+
+.aboutContainer {
+  align-items: flex-end;
+}
+

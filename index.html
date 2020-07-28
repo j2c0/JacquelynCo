@@ -1,0 +1,101 @@
+<!--
+  NAME: Jacquelyn Co
+  
+  HEADER: This is the HTML file of Jacquelyn Co's Personal Portfolio
+  Website. It holds the basic elements that structure her website
+  
+  DATE: 7/20/2020
+-->
+
+<!DOCTYPE html>
+<!--This part sets the language to be english-->
+<html lang="en">
+
+<!--HEAD-->
+<head>
+    <title>Jacquelyn Co</title>
+    <!--This line below links the CSS style file to the HTML file so we can
+    style the elements of our website-->
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<!--BODY-->
+<body>
+  <header>
+    <nav id="navLinks">
+      <a class="homeGuide" href="index.html"><b>Home</b></a>
+      <a class="aboutGuide" href="#about"><b>About</b></a>
+      <a class="projectGuide" href="#projects"><b>Projects</b></a>
+      <a class="contactGuide" href="#contact"><b>Contact</b></a>
+     
+      <!--ADD PDF VERSION OF RESUME WHEN FINISHED-->
+      <a class="resumeDownload" href="https://docs.google.com/document/d/1ENlgXRYhOMBUYsbop2IrP5gpK4gA6RWnmZxLiS76a54/edit?usp=sharing" target="_blank"><b>Download Resume</b></a>
+    </nav>
+  </header>
+
+  <!--SECTION: NAME INFO ON FRONT PAGE-->
+  <section id="front">
+    <div class="frontContainer">
+      <h1 id="frontText">I am Jacquelyn Co</h1>
+      <h2 class="frontText">Computer Science Major at UC San Diego</h2>
+    </div>
+  </section>
+
+  <main>
+    <!--SECTION: ABOUT PAGE OF WEBSITE-->
+    <section id="about">
+      <div class="aboutContainer">
+        <h2 class="aboutMe">About Me</h2>
+        <img id="profilePic" src="./pfp.jpg">
+        <span class="basicInfo">Name: Jacquelyn Co</span>
+        <br>
+        <span class="basicInfo">Profile: UC San Diego Computer Science Student</span>
+        <br>
+        <span class="basicInfo">Email: j2co@ucsd.edu</span>
+        <br>
+        <span class="basicInfo">City: San Diego, CA</span>
+        <br>
+      </div>
+    </section>
+
+    <!--SECTION: PROJECTS PAGE OF WEBSITE-->
+    <section id="projects" name="projects">
+      <div class="projectContainter">
+        <h2 class="projects">Projects</h2>
+      </div>
+    </section>
+
+    <!--SECTION: CONTACT ME PAGE OF WEBSITE-->
+    <section id="contact" name="contact">
+      <div class="contactContainer">
+        <h2 class="contactMe">Contact Me</h2>
+        <!--ADD MORE TO THE FORM LATER-->
+        <form id="contactForms" action="./form.html" method="POST">
+          <div class="div-formName">
+            <input id="formName" name="formName" type="text" placeholder="Your Name" required style="font-family: Verdana";></input>
+          </div>
+          <br>
+          <div class="div-formEmail">
+            <input id="formEmail" name="formEmail" type="text" placeholder="Your Email" required style="font-family: Verdana";></input>
+          </div>
+          <br>
+          <div class="div-formMessage">
+            <textarea id="formMessage" name="formMessage" placeholder="Your Message" style="font-family: Verdana";></textarea>
+          </div>
+          <br>
+          <div class="div-formSubmit">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div> 
+    </section>
+  </main>
+
+</body>
+
+<!--FOOTER: BOTTOM OF PAGE WHERE CREDITS ARE-->
+<footer>
+    
+</footer>
+
+</html>
