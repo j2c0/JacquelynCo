@@ -22,13 +22,16 @@ h1 {
     margin: 0 0 10px 0;
 }
 
-/*styling the h2*/
 .frontText{
     color: white;
     font-family: Verdana;
     font-size: 20px;
     margin-bottom: 50px;
     letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 /*styling the home page background image*/
@@ -93,8 +96,11 @@ also spacing out the links on the front page*/
   
 }
 
-#contactForms {
-  text-align: center;
+#contactForms, #send-a-message-header {
+  display: block;
+  margin-left: 170px;
+  margin-right: auto;
+  font-family: Verdana;
 }
 
 .formAnswer {
@@ -103,10 +109,31 @@ also spacing out the links on the front page*/
 
 #formMessage {
   height: 200px;
-  width: 200px;
+  width: 400px;
 }
 
-.aboutContainer {
-  align-items: flex-end;
+#formEmail, #formName {
+  height: 40px;
+  width: 400px;
+} 
+
+#social-media-contact {
+  display: block;
+  position: relative;
+  top: -477.5px;
+  margin-left: 650px;
+  margin-right: auto;
+  font-family: Verdana;
+  font-weight: bold;
 }
 
+.contact-me-summary {
+  font-size: 18px;
+  font-family: Verdana;
+  display: block;
+  position: relative;
+  top: -505px;
+  margin-left: 650px;
+  margin-right: auto;
+  font-weight: normal;
+}
