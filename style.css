@@ -163,3 +163,37 @@ also spacing out the links on the front page*/
   0 2px 5px 0 rgba(0,0,0,0.2);
 }
 
+#banana {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+#bananianoUp {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#COSMOS_BEACHES {
+  margin-left: 30px;
+  margin-right: auto;
+  display: block;
+  width: 320px;
+  height: 240px;
+}
+
+#arduinoDraw {
+  top: -2px;
+  margin-left: 900px;
+  margin-right: auto;
+  display: block;
+  width: 320px;
+  height: 240px;
+}
+
+/*.projectExample {
+  height: 300px;
+}
+ --> You put a box by using border property - border : 1px solid black;
+*/
