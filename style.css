@@ -12,8 +12,8 @@
 #navLinks {
   height: 30px;
   background-color: black;
-  width: 1500px ;  
   overflow: hidden;
+
 }
 
 /*styling the h1*/
@@ -22,6 +22,7 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 80px;
     margin: 0 0 10px 0;
+    overflow: hidden;
 }
 
 .frontText{
@@ -30,10 +31,12 @@ h1 {
     font-size: 25px;
     margin-bottom: 50px;
     letter-spacing: 1px;
+    overflow: hidden;
 }
 
 h3 {
   font-size: 30px;
+  overflow: hidden;
 }
 
 /*styling the home page background image*/
@@ -46,6 +49,7 @@ h3 {
   opacity: 0.8;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 /*here we are styling the info on the front page to be aligned at the center 
@@ -72,6 +76,7 @@ also spacing out the links on the front page*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     padding: 0 85px;
+    overflow: hidden;
 }
 
 .projects, .contactMe {
@@ -104,7 +109,6 @@ also spacing out the links on the front page*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
-  
 }
 
 #contactForms, #send-a-message-header {
@@ -112,6 +116,9 @@ also spacing out the links on the front page*/
   margin-left: 20px;
   margin-right: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  min-width: 340px;
+  max-width: 1000px;
+  overflow: hidden;
 }
 
 .formAnswer {
