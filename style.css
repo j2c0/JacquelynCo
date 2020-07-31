@@ -10,10 +10,10 @@
 **/
 
 #navLinks {
-  height: 25px;
+  height: 30px;
   background-color: black;
-  min-width: 320px;
-  max-width: 1500px;
+  width: 1500px ;  
+  overflow: hidden;
 }
 
 /*styling the h1*/
