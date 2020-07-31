@@ -12,6 +12,8 @@
 #navLinks {
   height: 25px;
   background-color: black;
+  min-width: 1500px;
+  max-width: 1500px;
 }
 
 /*styling the h1*/
@@ -209,7 +211,7 @@ also spacing out the links on the front page*/
   border-radius: 50%;
   position: relative;
   top: -505px;
-  left: 745px;
+  left: 720px;
 }
 
 
