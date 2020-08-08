@@ -24,12 +24,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 480px) {
-  #navLinks {
-    width: 50px;
-  }
-}
-
 /*styling the h1*/
 h1 {
     color: white;
@@ -204,3 +198,10 @@ also spacing out the links on the front page*/
   left: 810px;
 }
 
+
+@media only screen and (max-width: 480px) {
+  .homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
+    font-size: 5px;
+    padding: 0 5px;
+  }
+}
