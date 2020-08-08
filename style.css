@@ -14,23 +14,20 @@
   /*border: 1px solid red !important*/
 }
 
-@viewport {
-  width: 50%;
-}
-
-@-ms-viewport {{
-  width: 50%
-}}
-
 #navLinks {
   height: 30px;
-  overflow: clip;
   position: fixed;
   background-color: black;
   width: 100%;
   margin-left: auto;
   margin-right: right;
   z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+  #navLinks {
+    width: 480px;
+  }
 }
 
 /*styling the h1*/
@@ -63,8 +60,11 @@ h3 {
   top: 30px;
   z-index: 1;
   overflow: hidden;
-  background-image: url("./siteImages/backgroundImage.jpeg");
   opacity: 0.6;
+
+  background-image: url("./siteImages/backgroundImage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -88,7 +88,6 @@ also spacing out the links on the front page*/
 .homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
     color: white;
     background-color: black;
-
     font-size: 17.5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -184,21 +183,6 @@ also spacing out the links on the front page*/
   font-weight: bold;
 }
 
-/*THIS BOXES THE INFO WITHIN EACH PAGE OF THE WEBSITE*/
-/*.contactContainer {
-  height: 5rem;
-  align-self: center;
-  padding: 2rem 0.5rem;
-  position: relative;
-  background-color: black;
-  top: 5em;
-  margin-bottom: 1em;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06), 
-  0 2px 5px 0 rgba(0,0,0,0.2);
-}*/
 
 #banana {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -211,17 +195,6 @@ also spacing out the links on the front page*/
   margin-left: 100px;
   margin-right: auto;
   display: block;
-}
-
-#bananianoProject {
-  margin-right: 800px;
-  margin-left: 20px;
-  padding-bottom: 200px;
-  border: solid 1px rgba(0, 0, 0, .4);
-  /*background-clip: padding-box;
-  border-radius: 5px;
-  padding: 5px;
-  box-sizing: border-box;*/
 }
 
 .social-icons, .social-media-box {
