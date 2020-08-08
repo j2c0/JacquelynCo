@@ -183,12 +183,28 @@ also spacing out the links on the front page*/
   font-size: 25px;
   margin-left: 110px;
   margin-bottom: 50px;
+  
+}
+
+#COSMOS_BEACH1 {
+  width: 350px;
+  height: 240px;
+  padding-left: 50px;
+}
+
+#COSMOS_BEACH2 {
+  width: 320px;
+  height: 240px;
 }
 
 #bananianoUp {
-  margin-left: 100px;
-  margin-right: auto;
-  display: block;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-bottom: 200px;
+}
+
+#bananianoProject {
+  display: flex;
 }
 
 .social-icons, .social-media-box {
@@ -196,12 +212,4 @@ also spacing out the links on the front page*/
   position: relative;
   top: -505px;
   left: 810px;
-}
-
-
-@media only screen and (max-width: 900px) {
-  .homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
-    font-size: 5px;
-    padding: 0 5px;
-  }
 }
