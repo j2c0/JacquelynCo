@@ -93,6 +93,7 @@ also spacing out the links on the front page*/
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50px;
+  padding-top: 40px;
 }
 
 .aboutMe {
@@ -100,6 +101,7 @@ also spacing out the links on the front page*/
   margin-right: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50px;
+  padding-top: 40px;
 }
 
 #profilePic {
@@ -200,11 +202,12 @@ also spacing out the links on the front page*/
 #bananianoUp {
   margin-left: 200px;
   margin-right: 50px;
-  margin-bottom: 200px;
 }
 
-#bananianoProject {
+#flexProjects {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .social-icons, .social-media-box {
@@ -214,10 +217,101 @@ also spacing out the links on the front page*/
   left: 810px;
 }
 
-@media only screen and (max-width: 480px) {
-  #front {
-    width: 480px;
-    height: 900px;
-    font-size: 10px;
-  }
+.proj-title-individual {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
 }
+
+#COSMOS_IMAGE1_TITLE {
+  position: relative;
+  right: 710px;
+  margin-top: 5px;
+}
+
+#COSMOS_IMAGE2_TITLE {
+  position: relative;
+  right: 160px;
+  margin-top: 5px;
+}
+
+#python-image-processing {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 1px;
+  position: relative;
+  right: 848px;
+  margin-top: -30px;
+}
+
+#image-processing-year {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 1px;
+  position: relative;
+  right: 1114px;
+  margin-top: -20px;
+}
+
+#C-sharp-banana-piano {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 1px;
+  position: relative;
+  right: 80px;
+  margin-top: -30px;
+}
+
+#banana-piano-year {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 1px;
+  position: relative;
+  right: 330px;
+  margin-top: -20px;
+}
+
+#projectTitles, #projectLanguages, #projectYear-container, #project-summary-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.projectSummary {
+  margin-top: 5px;
+}
+
+.projectSummary1 li {
+  list-style-type: square;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+  color: #4e4e4e;
+}
+
+.projectSummary2 li {
+  list-style-type: square;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  position: relative;
+  left: 360px;
+  width: 45%;
+  color: #4e4e4e;
+}
+
+
+
+
+
