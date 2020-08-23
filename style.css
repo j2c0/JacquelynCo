@@ -14,17 +14,35 @@
   /*border: 1px solid red !important*/
 }
 
+/* ***NAVIGATION LINKS SECTION *** */
+
 #navLinks {
   height: 30px;
   position: fixed;
   background-color: black;
   width: 100%;
-  margin-left: auto;
-  margin-right: right;
+  margin: 0 0 10px 0;
   z-index: 2;
+  text-align: center;
 }
 
-/*styling the h1*/
+/*accounting for zooming in on website for the front section of website */
+@media (max-width: 1700px) {
+  #navLinks {
+    height: auto;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    z-index: 2;
+    text-align: right;
+  }
+}
+
+/* **STYLING NAME INFO ON FRONT PAGE ** */
 h1 {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,6 +51,7 @@ h1 {
     overflow: hidden;
 }
 
+
 .frontText{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,6 +59,8 @@ h1 {
     margin-bottom: 50px;
     letter-spacing: 1px;
 }
+
+/* ** END OF STYLING NAME INFO ON FRONT PAGE ** */
 
 h3 {
   font-size: 30px;
@@ -85,8 +106,12 @@ also spacing out the links on the front page*/
     font-size: 17.5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    padding: 0 85px;
+    padding: 0 100px;
+    width: 100%;
     overflow: hidden;
+    display: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects, .contactMe {
@@ -94,6 +119,12 @@ also spacing out the links on the front page*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50px;
   padding-top: 40px;
+}
+
+/*ABOUT ME SECTION*/
+
+.about {
+  align-items: baseline;
 }
 
 .aboutMe {
@@ -105,23 +136,38 @@ also spacing out the links on the front page*/
 }
 
 #profilePic {
-  height: 300px;
+  height: 400px;
+  width: 350px;
   display: block;
-  margin-left: 80px;
+  margin-left: 65px;
   margin-right: auto;
-  border-radius: 50%;
 }
 
-.basicInfo {
+.basicInfo-column1 {
   display: block;
   position: relative;
-  top: -300px;
+  top: -380px;
   margin-left: 500px;
   margin-right: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
+  width: 20%;
 }
+
+.basicInfo-column2 {
+  display: block;
+  position: relative;
+  top: -519px;
+  margin-left: 800px;
+  margin-right: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  width: 20%;
+}
+
+/* END OF ABOUT ME SECTION */
 
 #contactForms, #send-a-message-header {
   display: block;
@@ -310,6 +356,7 @@ also spacing out the links on the front page*/
   width: 45%;
   color: #4e4e4e;
 }
+
 
 
 
