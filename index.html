@@ -46,102 +46,118 @@
     <!--SECTION: ABOUT ME PAGE OF WEBSITE-->
     <section id="about">
       <div class="aboutContainer">
-        <div class="aboutMeBox" border="5">
-          <h2 class="aboutMe">About Me</h2>
+        <div class="about-shadowBox">
+          <div class="about-title">
+            <h2 class="aboutMe">About Me</h2>
+          </div>
+          <div class="about-Image">
+            <img id="profilePic" src="./siteImages/pfp.jpg"/>
+          </div>
+          <div class="about-columns">
+            <p class="about-leftColumn">
+              <span class="basicInfo-column1"><b>Name:</b> Jacquelyn Co</span>
+              <br>
+              <span class="basicInfo-column1"><b>Profile:</b> UC San Diego Computer Science Student</span>
+              <br>
+              <span class="basicInfo-column1"><b>Email: </b>co.jacquelyn2@gmail.com</span>
+              <br>
+            </p>
+            <p class="about-rightColumn">
+              <span class="basicInfo-column2"><b>City: </b> San Diego, CA</span>
+              <br>
+              <span class="basicInfo-column2"><b>Technical Skills: </b> Java, HTML, CSS, Python</span>
+              <br>
+              <span class="basicInfo-column2"><b>Courses: </b>Basic Data Structures & Object Oriented
+              Design, Software Tools & Techniques (Git,Linux/Unix, IntelliJ, etc.), CodeCademy: 
+              WebDevelopment, Intro to Computer Science: Java (I & II)
+              </span>
+              <br>
+          </p>
         </div>
-        <img id="profilePic" src="./siteImages/pfp.jpg"/>
-        <span class="basicInfo-column1"><b>Name:</b> Jacquelyn Co</span>
-        <br>
-        <span class="basicInfo-column1"><b>Profile:</b> UC San Diego Computer Science Student</span>
-        <br>
-        <span class="basicInfo-column1"><b>Degree:</b>Bachelor's of Science in Computer Science</span>
-        <br>
-      </div>
-      <div class="aboutContainer">
-        <span class="basicInfo-column2"><b>City:</b> San Diego, CA</span>
-        <br>
-        <span class="basicInfo-column2"><b>Technical Skills:</b> Java, HTML, CSS, Python</span>
-        <br>
-        <span class="basicInfo-column2"><b>Email:</b> co.jacquelyn2@gmail.com </span>
-        <br>
+        </div>
       </div>
     </section>
 
     <!--SECTION: PROJECTS PAGE OF WEBSITE-->
     <section id="projects" name="projects">
       <div class="projectContainer">
-        <h2 class="projects">Projects</h2>
-        <div id="flexProjects">
-          <img class="projectExample" id="COSMOS_BEACH1" src="./siteImages/COSMOS_BEACH1.jpg">
-          <img class="projectExample" id="COSMOS_BEACH2" src="./siteImages/COSMOS_BEACH2.jpg">
-          <iframe id="bananianoUp" class="projectExample" width="400" height="240" src="https://www.youtube.com/embed/H0gIcUrYxJ8" 
-          frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div id="projectTitles">
-          <h3 class="proj-title-individual" id="COSMOS_IMAGE1_TITLE">image processing</h3>
-          <h3 class="proj-title-individual" id="COSMOS_IMAGE2_TITLE">banana piano</h3>
-        </div>
-        <div id="projectLanguages">
-          <h4 id="python-image-processing">python</h4>
-          <h4 id="C-sharp-banana-piano">C#, Arduino, BreadBoards & Circuits</h4>
-        </div>
-        <div id="projectYear-container">
-          <h4 id="image-processing-year">2018</h4>
-          <h4 id="banana-piano-year">2018</h4>
-        </div>
-        <div id="project-summary-container">
-          <ul class="projectSummary1" id="image-processing-summary">
-            <li>applied multiple filters to existing images</li>
-            <li>photoshopped props and people (including myself) onto other images</li>
-            <li>edited images to have different sized and colored borders</li>
-          </ul>
-          <ul class="projectSummary2" id="banana-piano-summary">
-            <li>wired several breadboards to complete multiple circuits to hook up a piezo speaker to make noise and
+        <div class="project-shadowBox">
+          <div class="project-title">
+            <h2 class="projects">Projects</h2>
+          </div>
+          <div id="flexProjects">
+            <img class="projectExample" id="COSMOS_BEACH1" src="./siteImages/COSMOS_BEACH1.jpg">
+            <img class="projectExample" id="COSMOS_BEACH2" src="./siteImages/COSMOS_BEACH2.jpg">
+            <iframe id="bananianoUp" class="projectExample" width="400" height="240" src="https://www.youtube.com/embed/H0gIcUrYxJ8" 
+            frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="projectTitles">
+            <h3 class="proj-title-individual" id="COSMOS_IMAGE1_TITLE">image processing</h3>
+            <h3 class="proj-title-individual" id="COSMOS_IMAGE2_TITLE">banana piano</h3>
+          </div>
+          <div id="projectLanguages">
+            <h4 id="python-image-processing">python</h4>
+            <h4 id="C-sharp-banana-piano">C#, Arduino, BreadBoards & Circuits</h4>
+          </div>
+          <div id="projectYear-container">
+            <h4 id="image-processing-year">2018</h4>
+            <h4 id="banana-piano-year">2018</h4>
+          </div>
+          <div id="project-summary-container">
+            <ul class="projectSummary1" id="image-processing-summary">
+              <li>applied multiple filters to existing images</li>
+              <li>photoshopped props and people (including myself) onto other images</li>
+              <li>edited images to have different sized and colored borders</li>
+            </ul>
+            <ul class="projectSummary2" id="banana-piano-summary">
+              <li>wired several breadboards to complete multiple circuits to hook up a piezo speaker to make noise and
               play tones</li>
-            <li>connected wires to multiple bananas to have each banana play a different piano tone/note</li>
-            <li>programmed in basic C# to code the specific sound/tone for each “key” on the banana piano</li>
-          </ul>
+              <li>connected wires to multiple bananas to have each banana play a different piano tone/note</li>
+              <li>programmed in basic C# to code the specific sound/tone for each “key” on the banana piano</li>
+            </ul>
+          </div>
         </div>
-      </div>
     </section>
 
     <!--SECTION: CONTACT ME PAGE OF WEBSITE-->
     <section id="contact" name="contact">
       <div class="contactContainer">
-        <h2 class="contactMe" style="color: black";>Contact Me</h2>
-        <!--ADD MORE TO THE FORM LATER: CHANGE THE ACTION-->
-        <h3 id="send-a-message-header">Send Me a Message!</h3>
-        <form id="contactForms" action="./contact.php" method="POST">
-          <div class="div-formName">
-            <input id="formName" name="formName" type="text" placeholder="Your Name" required style="font-family: 'Trebuchet MS', 
-            'Lucida Sans Unicode', 
-            'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></input>
-          </div>
-          <br>
-          <div class="div-formEmail">
-            <input id="formEmail" name="formEmail" type="text" placeholder="Your Email" required style="font-family: 'Trebuchet MS', 
-            'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></input>
-          </div>
-          <br>
-          <div class="div-formMessage">
-            <textarea id="formMessage" name="formMessage" placeholder="Your Message" style="font-family: 'Trebuchet MS', 
-            'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></textarea>
-          </div>
-          <br>
-          <div class="div-formSubmit">
-            <input type="submit" value="Submit" style="font-family: 'Trebuchet MS', 
-            'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-          </div>
-        </form>
-        <h3 id="social-media-contact" style="font-size: 30px";>Get In Touch, Let's Chat!</h3>
-        <h4 class="contact-me-summary">Feel free to contact me! I would love to join your team!</h4>
-        <h3 id="social-media">Social Media</h3>
-        <a href="./Resume.pdf" target="_blank"><img class="social-icons" src="./siteImages/resume-icon.jpg" height="50"/></a>
-        <a href="https://github.com/j2c0" target="_blank"><img class="social-icons" src="./siteImages/github-icon.png" height="45"/></a>
-        <a href="https://www.instagram.com/itsjackieco/" target="_blank"><img class="social-icons" src="./siteImages/instagram-icon.jpg" height="55"/></a>
-        <a href="https://www.linkedin.com/in/jacquelyn-co-55114119a" target="_blank"><img class="social-icons" src="./siteImages/linkedIn-icon.jpg" height="50"/></a>
-        </span>
-      </div> 
+        <div class="contact-shadowBox">
+          <h2 class="contactMe" style="color: black";>Contact Me</h2>
+          <!--ADD MORE TO THE FORM LATER: CHANGE THE ACTION-->
+          <h3 id="send-a-message-header">Send Me a Message!</h3>
+          <form id="contactForms" action="./contact.php" method="POST">
+            <div class="div-formName">
+              <input id="formName" name="formName" type="text" placeholder="Your Name" required style="font-family: 'Trebuchet MS', 
+              'Lucida Sans Unicode', 
+              'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></input>
+            </div>
+            <br>
+            <div class="div-formEmail">
+              <input id="formEmail" name="formEmail" type="text" placeholder="Your Email" required style="font-family: 'Trebuchet MS', 
+              'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></input>
+            </div>
+            <br>
+            <div class="div-formMessage">
+              <textarea id="formMessage" name="formMessage" placeholder="Your Message" style="font-family: 'Trebuchet MS', 
+              'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";></textarea>
+            </div>
+            <br>
+            <div class="div-formSubmit">
+              <input type="submit" value="Submit" style="font-family: 'Trebuchet MS', 
+              'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+            </div>
+          </form>
+          <h3 id="social-media-contact" style="font-size: 30px";>Get In Touch, Let's Chat!</h3>
+          <h4 class="contact-me-summary">Feel free to contact me! I would love to join your team!</h4>
+          <h3 id="social-media">Social Media</h3>
+          <a href="./Resume.pdf" target="_blank"><img class="social-icons" src="./siteImages/resume-icon.jpg" height="50"/></a>
+          <a href="https://github.com/j2c0" target="_blank"><img class="social-icons" src="./siteImages/github-icon.png" height="45"/></a>
+          <a href="https://www.instagram.com/itsjackieco/" target="_blank"><img class="social-icons" src="./siteImages/instagram-icon.jpg" height="55"/></a>
+          <a href="https://www.linkedin.com/in/jacquelyn-co-55114119a" target="_blank"><img class="social-icons" src="./siteImages/linkedIn-icon.jpg" height="50"/></a>
+          </span>
+        </div> 
+      </div>
     </section>
   </main>
 

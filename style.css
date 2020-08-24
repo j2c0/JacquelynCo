@@ -27,7 +27,7 @@
 }
 
 /*accounting for zooming in on website for the front section of website */
-@media (max-width: 1700px) {
+@media (max-width: 1300px) {
   #navLinks {
     height: auto;
     position: fixed;
@@ -51,22 +51,6 @@ h1 {
     overflow: hidden;
 }
 
-
-.frontText{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
-}
-
-/* ** END OF STYLING NAME INFO ON FRONT PAGE ** */
-
-h3 {
-  font-size: 30px;
-  overflow: hidden;
-}
-
 /*styling the home page background image*/
 #front {
   width: 100%;
@@ -83,20 +67,35 @@ h3 {
   background-size: cover;
 }
 
+.frontText{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
 /*here we are styling the info on the front page to be aligned at the center 
 so it can be easily seen and more presentable */
 #front .frontContainer {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 15px;
-  }
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+/* ** END OF STYLING NAME INFO ON FRONT PAGE ** */
+
+h3 {
+  font-size: 30px;
+  overflow: hidden;
+}
 
 /*here we are styling the navigation links to be certain colors and fonts. we are 
 also spacing out the links on the front page*/
@@ -123,14 +122,21 @@ also spacing out the links on the front page*/
 
 /*ABOUT ME SECTION*/
 
-.about {
-  align-items: baseline;
+.aboutContainer {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#about {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .aboutMe {
   margin-left: 130px;
   margin-right: auto;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 50px;
   padding-top: 40px;
 }
@@ -143,89 +149,50 @@ also spacing out the links on the front page*/
   margin-right: auto;
 }
 
-.basicInfo-column1 {
-  display: block;
+.about-shadowBox {
   position: relative;
-  top: -380px;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-leftColumn {
+  display: inline-block;
+  top: -23.75rem;
   margin-left: 500px;
   margin-right: auto;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
-  width: 20%;
+  width: 15%;
+  margin-right: 6.25rem;
+  flex-flow: row-reverse wrap;
 }
 
-.basicInfo-column2 {
-  display: block;
-  position: relative;
-  top: -519px;
-  margin-left: 800px;
-  margin-right: auto;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.about-rightColumn {
+  display: inline-block;
   font-size: 15px;
   font-weight: normal;
-  width: 20%;
+  width: 15%;
+  flex-flow: row-reverse wrap;
 }
-
 /* END OF ABOUT ME SECTION */
 
-#contactForms, #send-a-message-header {
-  display: block;
-  margin-left: 20px;
+/* ** PROJECTS SECTION ** */
+.projectContainer {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
-  padding-left: 100px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: auto;
 }
-
-.formAnswer {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#formMessage {
-  height: 200px;
-  width: 400px;
-}
-
-#formEmail, #formName {
-  height: 40px;
-  width: 400px;
-} 
-
-#social-media-contact {
-  display: block;
+.project-shadowBox {
   position: relative;
-  top: -477.5px;
-  padding-top: 21.5px;
-  margin-left: 710px;
-  margin-right: auto;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
-
-.contact-me-summary {
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: block;
-  position: relative;
-  top: -505px;
-  margin-left: 710px;
-  margin-right: auto;
-  font-weight: normal;
-}
-
-#social-media {
-  font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: block;
-  position: relative;
-  top: -505px;
-  margin-left: 620px;
-  margin-right: auto;
-  padding-left: 250px;
-  font-weight: bold;
-}
-
-
 #banana {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 25px;
@@ -254,13 +221,6 @@ also spacing out the links on the front page*/
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-}
-
-.social-icons, .social-media-box {
-  border-radius: 50%;
-  position: relative;
-  top: -505px;
-  left: 810px;
 }
 
 .proj-title-individual {
@@ -356,9 +316,90 @@ also spacing out the links on the front page*/
   width: 45%;
   color: #4e4e4e;
 }
+/* **END OF PROJECTS SECTION ** */
 
 
+/* **CONTACT ME SECTION ** */
+.contactContainer {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.contact-shadowBox {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#contactForms, #send-a-message-header {
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  padding-left: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formAnswer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#formMessage {
+  height: 200px;
+  width: 400px;
+}
+
+#formEmail, #formName {
+  height: 40px;
+  width: 400px;
+} 
+
+#social-media-contact {
+  display: block;
+  position: relative;
+  top: -477.5px;
+  padding-top: 21.5px;
+  margin-left: 710px;
+  margin-right: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.contact-me-summary {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  position: relative;
+  top: -505px;
+  margin-left: 710px;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+#social-media {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  position: relative;
+  top: -505px;
+  margin-left: 620px;
+  margin-right: auto;
+  padding-left: 250px;
+  font-weight: bold;
+}
+
+/* **END OF CONTACT ME SECTION ** */
+
+.social-icons, .social-media-box {
+  border-radius: 50%;
+  position: relative;
+  top: -505px;
+  left: 810px;
+}
 
 
 
