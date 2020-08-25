@@ -32,7 +32,7 @@ html {
 
 /* COME BACK TO THIS PORTION AFTER LEARNING ABOUT BUTTONS IN JAVASCRIPT */
 /*accounting for zooming in on website for the front section of website */
-@media (max-width: 1300px) {
+@media only screen and (max-width: 577px) {
   #navLinks {
     /*height: auto;
     position: fixed;
@@ -48,24 +48,40 @@ html {
     z-index: 1;
   }
 
+
   .homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
     z-index: 1;
     display: none;
   }
 
   #front {
-    width: 100%;
+    /*width: 100%;
     height: 100vh;
     position: relative;
     top: 30px;
-    z-index: 2;
     overflow: hidden;
     opacity: 0.6;
 
+    z-index: 2;
     background-image: url("./siteImages/backgroundImage.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+
+
+    min-height: 100%;
+    max-width: 411px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -91,6 +107,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .frontText{
@@ -163,7 +180,7 @@ also spacing out the links on the front page*/
 /*ABOUT ME SECTION*/
 .aboutContainer {
   width: 100%;
-  padding-right: 100px;
+  padding-right: 150px;
   padding-left: 100px;
   padding-bottom: 80px;
   margin-right: auto;
@@ -300,7 +317,7 @@ also spacing out the links on the front page*/
 
 .projectContainer {
   width: 100%;
-  padding-right: 100px;
+  padding-right: 200px;
   padding-left: 100px;
   padding-bottom: 50px;
   margin-right: auto;
@@ -321,6 +338,7 @@ also spacing out the links on the front page*/
   position: relative;
   background-color: #fff;
   margin-bottom: 3rem;
+  /*margin-left: 15rem;*/
   z-index: 1;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -333,23 +351,46 @@ also spacing out the links on the front page*/
   padding-bottom: 0;
 }
 
-.projectExample {
+/* **IF YOU WANT YOUR PROJECTS TO BE HORIZONTALLY ALIGNED UNCOMMENT THE CODE BELOW** */
+/*#flexBox1 {
+  display: inline-flex;
+  flex-direction: row;
+}*/
+
+/*#flexBox2 {
+  display: inline-flex;
+  flex-direction: row;
+}*/
+
+#flexBox2 {
+  /*spaces out the project boxes*/
+  margin-top: 5rem;
+}
+
+#COSMOS_BEACH1, #COSMOS_BEACH2 {
   height: 340px;
   width: 420px;
+}
+
+#banana-piano-video {
+  height: 340px;
+  width: 840px;
 }
 
 #COSMOS-IMAGE-PROCESSING{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: relative;
-  left: 300px;
+  left: 280px;
   bottom: 20px;
+  font-size: 35px;
 }
 
 #COSMOS-BANANA-PIANO{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: relative;
-  left: 100px;
+  left: 280px;
   bottom: 20px;
+  font-size: 35px;
 }
 
 #image-processing-language {
@@ -362,8 +403,29 @@ also spacing out the links on the front page*/
 #banana-piano-language {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: relative;
-  left: 50px;
+  left: 230px;
   bottom: 50px;
+}
+
+.project-summary-container {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin-top: -150px;
+}
+
+/*positioning the project summaries*/
+#image-processing-summary {
+  position: relative;
+  left: 470px;
+  bottom: 100px;
+  width: 60%;
+}
+
+#banana-piano-summary {
+  position: relative;
+  left: 470px;
+  bottom: 100px;
+  width: 60%;
 }
 
 /* **END OF PROJECTS SECTION ** */
@@ -375,6 +437,10 @@ also spacing out the links on the front page*/
   padding: 100px 300px 100px 300px;
   margin-right: auto;
   margin-left: auto;
+  background-image: url("https://media.istockphoto.com/photos/opaque-sky-in-the-evening-background-look-so-sad-sky-picture-id901921196?k=6&m=901921196&s=170667a&w=0&h=OeN_XENTdo57qCqVC7LSCumcIdLt0gvmFeAmgGQ5jxA=");
+  background-size: cover;
+  background-position: 50% 0;
+  background-attachment: fixed;
 }
 
 .contact-shadowBox {
@@ -382,7 +448,7 @@ also spacing out the links on the front page*/
   background-color: #fff;
   margin-bottom: 3rem;
   z-index: 1;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.8);
 }
 
 #contactForms, #send-a-message-header {
