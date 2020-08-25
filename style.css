@@ -309,6 +309,27 @@ also spacing out the links on the front page*/
 
 /* END OF ABOUT ME SECTION */
 
+.section-divider {
+  position: relative;
+  padding: 8rem 0;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+
 /* ** PROJECTS SECTION ** */
 .project-subtitle {
   text-align: center;
@@ -499,7 +520,7 @@ also spacing out the links on the front page*/
   padding: 100px 300px 100px 300px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("https://media.istockphoto.com/photos/opaque-sky-in-the-evening-background-look-so-sad-sky-picture-id901921196?k=6&m=901921196&s=170667a&w=0&h=OeN_XENTdo57qCqVC7LSCumcIdLt0gvmFeAmgGQ5jxA=");
+  background-image: url("./siteImages/contact-me-image.jpg");
   background-size: cover;
   background-position: 50% 0;
   background-attachment: fixed;
