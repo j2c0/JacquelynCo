@@ -209,6 +209,7 @@ also spacing out the links on the front page*/
 .about-shadowBox {
   position: relative;
   background-color: #fff;
+  margin-top: 4.5rem;
   margin-bottom: 3rem;
   z-index: 1;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
@@ -313,6 +314,7 @@ also spacing out the links on the front page*/
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
+  padding-left: 20px;
 }
 
 .projectContainer {
@@ -350,17 +352,6 @@ also spacing out the links on the front page*/
 .proj-title-individual {
   padding-bottom: 0;
 }
-
-/* **IF YOU WANT YOUR PROJECTS TO BE HORIZONTALLY ALIGNED UNCOMMENT THE CODE BELOW** */
-/*#flexBox1 {
-  display: inline-flex;
-  flex-direction: row;
-}*/
-
-/*#flexBox2 {
-  display: inline-flex;
-  flex-direction: row;
-}*/
 
 #flexBox2 {
   /*spaces out the project boxes*/
@@ -413,11 +404,19 @@ also spacing out the links on the front page*/
   margin-top: -150px;
 }
 
+.projectSummary1 {
+  margin-left: -40px;
+}
+
+.projectSummary2 {
+  margin-left: -40px;
+}
+
 /*positioning the project summaries*/
 #image-processing-summary {
   position: relative;
   left: 470px;
-  bottom: 100px;
+  bottom: 120px;
   width: 60%;
 }
 
@@ -428,6 +427,69 @@ also spacing out the links on the front page*/
   width: 60%;
 }
 
+/*accounts for 150% zoom on my desktop*/
+@media only screen and (max-width: 1400px) {
+  .projectContainer {
+    width: 100%;
+    padding-right: 201px;
+    padding-left: 201px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .projectLanguages {
+    padding-bottom: 200px;
+  }
+
+  #image-processing-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-IMAGE-PROCESSING {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-BANANA-PIANO {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #image-processing-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-video {
+    width: 460px;
+  }
+}
 /* **END OF PROJECTS SECTION ** */
 
 
@@ -507,14 +569,15 @@ also spacing out the links on the front page*/
   font-weight: bold;
 }
 
-/* **END OF CONTACT ME SECTION ** */
-
 .social-icons, .social-media-box {
   border-radius: 50%;
   position: relative;
   top: -505px;
   left: 810px;
 }
+
+/* **END OF CONTACT ME SECTION ** */
+
 
 
 

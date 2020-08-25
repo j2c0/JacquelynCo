@@ -146,9 +146,13 @@
     <section id="contact" name="contact">
       <div class="contactContainer">
         <div class="contact-shadowBox">
-          <h2 class="contactMe" style="color: black";>Contact Me</h2>
+          <div class="contact-me-title">
+            <h2 class="contactMe" style="color: black";>Contact Me</h2>
+          </div>
           <!--ADD MORE TO THE FORM LATER: CHANGE THE ACTION-->
-          <h3 id="send-a-message-header">Send Me a Message!</h3>
+          <div class="contact-me-subtitle">
+            <h3 id="send-a-message-header">Send Me a Message!</h3>
+          </div>
           <form id="contactForms" action="./contact.php" method="POST">
             <div class="div-formName">
               <input id="formName" name="formName" type="text" placeholder="Your Name" required style="font-family: 'Trebuchet MS', 
@@ -171,14 +175,17 @@
               'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
             </div>
           </form>
-          <h3 id="social-media-contact" style="font-size: 30px";>Get In Touch, Let's Chat!</h3>
-          <h4 class="contact-me-summary">Feel free to contact me! I would love to join your team!</h4>
-          <h3 id="social-media">Social Media</h3>
-          <a href="./Resume.pdf" target="_blank"><img class="social-icons" src="./siteImages/resume-icon.jpg" height="50"/></a>
-          <a href="https://github.com/j2c0" target="_blank"><img class="social-icons" src="./siteImages/github-icon.png" height="45"/></a>
-          <a href="https://www.instagram.com/itsjackieco/" target="_blank"><img class="social-icons" src="./siteImages/instagram-icon.jpg" height="55"/></a>
-          <a href="https://www.linkedin.com/in/jacquelyn-co-55114119a" target="_blank"><img class="social-icons" src="./siteImages/linkedIn-icon.jpg" height="50"/></a>
-          </span>
+          <div class="contact-me-subtitle">
+            <h3 id="social-media-contact" style="font-size: 30px";>Get In Touch, Let's Chat!</h3>
+            <h4 class="contact-me-summary">Feel free to contact me! I would love to join your team!</h4>
+          </div>
+          <div class="social-media-icon-division">
+            <h3 id="social-media">Social Media</h3>
+            <a href="./Resume.pdf" target="_blank"><img class="social-icons" src="./siteImages/resume-icon.jpg" height="50"/></a>
+            <a href="https://github.com/j2c0" target="_blank"><img class="social-icons" src="./siteImages/github-icon.png" height="45"/></a>
+            <a href="https://www.instagram.com/itsjackieco/" target="_blank"><img class="social-icons" src="./siteImages/instagram-icon.jpg" height="55"/></a>
+            <a href="https://www.linkedin.com/in/jacquelyn-co-55114119a" target="_blank"><img class="social-icons" src="./siteImages/linkedIn-icon.jpg" height="50"/></a>
+          </div>
         </div> 
       </div>
     </section>
