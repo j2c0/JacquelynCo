@@ -32,58 +32,7 @@ html {
 
 /* COME BACK TO THIS PORTION AFTER LEARNING ABOUT BUTTONS IN JAVASCRIPT */
 /*accounting for zooming in on website for the front section of website */
-@media only screen and (max-width: 577px) {
-  #navLinks {
-    /*height: auto;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 15px;
-    z-index: 2;
-    text-align: right;*/
-    display: none;
-    z-index: 1;
-  }
 
-
-  .homeGuide, .aboutGuide, .projectGuide, .contactGuide, .resumeDownload {
-    z-index: 1;
-    display: none;
-  }
-
-  #front {
-    /*width: 100%;
-    height: 100vh;
-    position: relative;
-    top: 30px;
-    overflow: hidden;
-    opacity: 0.6;
-
-    z-index: 2;
-    background-image: url("./siteImages/backgroundImage.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-
-
-    min-height: 100%;
-    max-width: 411px;
-    
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-    
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 /* **STYLING NAME INFO ON FRONT PAGE ** */
 h1 {
@@ -259,7 +208,7 @@ also spacing out the links on the front page*/
   }
 }
 
-/*accounts for zoom at 175% and above on my desktop*/
+/*accounts for zoom at 175%-500% and above on my desktop*/
 @media only screen and (max-width: 1250px) {
   .aboutContainer {
     width: 100%;
@@ -448,7 +397,7 @@ also spacing out the links on the front page*/
   width: 60%;
 }
 
-/*accounts for 150% zoom on my desktop*/
+/*accounts for 150%-200% zoom on my desktop*/
 @media only screen and (max-width: 1400px) {
   .projectContainer {
     width: 100%;
@@ -509,6 +458,74 @@ also spacing out the links on the front page*/
 
   #banana-piano-video {
     width: 460px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .projectContainer {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .projectLanguages {
+    padding-bottom: 200px;
+  }
+
+  #image-processing-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-IMAGE-PROCESSING {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-BANANA-PIANO {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #image-processing-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-video {
+    width: 100%;
+  }
+
+  #COSMOS_BEACH1, #COSMOS_BEACH2 {
+    width: 100%;
+    height: 100%;
   }
 }
 /* **END OF PROJECTS SECTION ** */
