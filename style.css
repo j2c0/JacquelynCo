@@ -614,6 +614,62 @@ also spacing out the links on the front page*/
   left: 810px;
 }
 
+@media only screen and (max-width: 1250px) {
+  .contactContainer {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #send-a-message-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .div-formName, .div-formEmail, .div-formMessage, .div-formSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 100px;
+  }
+
+  .contact-me-through-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 450px;
+    left: -390px;
+  }
+
+  #social-media-contact {
+    width: 100%;
+  }
+
+  .social-media-icon-division {
+    position: relative;
+    left: -20px;
+  }
+
+  .social-icons {
+    padding-right: 20px;
+  }
+
+  .individual-social-media-icons {
+    position: relative;
+    left: -50px;
+  }
+
+}
+
 /* **END OF CONTACT ME SECTION ** */
 
 
