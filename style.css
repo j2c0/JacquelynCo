@@ -250,9 +250,10 @@ also spacing out the links on the front page*/
 
   .about-rightColumn {
     position: relative;
-    left: 100px;
-    top: 400px;
-    width: 70%;
+    left: 420px;
+    top: -80px;
+    width: 60%;
+    font-size: 19px;
   }
 }
 
