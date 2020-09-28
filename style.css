@@ -294,6 +294,7 @@ also spacing out the links on the front page*/
   padding-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #698FCE;
 }
 
 /*this shadow box holds the COSMOS Beach Image Projects*/
@@ -302,7 +303,8 @@ also spacing out the links on the front page*/
   background-color: #fff;
   margin-bottom: 3rem;
   z-index: 1;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 1.0);
+  /*0.08 0.5*/
 }
 
 /*this shadow box holds the Bananana Piano Project */
@@ -312,7 +314,7 @@ also spacing out the links on the front page*/
   margin-bottom: 3rem;
   /*margin-left: 15rem;*/
   z-index: 1;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 1.0);
 }
 
 .projectTitles {
@@ -458,6 +460,70 @@ also spacing out the links on the front page*/
 
   #banana-piano-video {
     width: 460px;
+  }
+}
+
+/*accounts for 150%-200% zoom on my desktop*/
+@media only screen and (max-width: 1300px) {
+  .projectContainer {
+    width: 100%;
+    padding-right: 201px;
+    padding-left: 201px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .projectLanguages {
+    padding-bottom: 200px;
+  }
+
+  #image-processing-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-language {
+    position: relative;
+    padding-top: 0;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-IMAGE-PROCESSING {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #COSMOS-BANANA-PIANO {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #image-processing-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-summary {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    width: 80%;
+  }
+
+  #banana-piano-video {
+    width: 100%;
   }
 }
 
@@ -614,7 +680,7 @@ also spacing out the links on the front page*/
   left: 810px;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1300px) {
   .contactContainer {
     width: 100%;
     padding-right: 50px;
